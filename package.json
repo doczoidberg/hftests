@@ -21,7 +21,10 @@
     "@angular/router": "~9.1.9",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "chevrotain": "^7.0.1",
+    "gpu.js": "^2.10.0",
+    "tiny-emitter": "2.1.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.7",
