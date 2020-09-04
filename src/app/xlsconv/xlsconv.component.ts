@@ -179,53 +179,9 @@ export class XlsconvComponent implements OnInit {
     this.printCellData("Z1198", idxDT);
     this.printCellData("Z1198", idxDT);
 
-    // this.printCellData("K91", idxDT);
-    // this.printCellData("H168", idxDT);
-    // this.printCellData("H169", idxDT);
-    // this.printCellData("H170", idxDT);
-    // this.printCellData("H171", idxDT);
-    // this.printCellData("B1090", idxDT);
-    // this.printCellData("C1090", idxDT);
-    // this.printCellData("C6", ST);
-    // this.printCellData("C7", ST);
-    // this.printCellData("C8", ST);
-    // hfInstance.setCellContents(hfInstance.simpleCellAddressFromString("J20", idxDT), 0.35);
-    // this.printCellData("J20", idxDT);
-    // this.printCellData("K20", idxDT);
-
-    // this.printCellData("C9", ST);
-    // this.printCellData("C10", ST);
-    // this.printCellData("C11", ST);
-    // this.printCellData("C12", ST);
-
-    // this.printCellData("C13", ST);
-    // this.printCellData("C14", ST);
-    // this.printCellData("C16", ST);
-
-    // // hfInstance.setCellContents(hfInstance.simpleCellAddressFromString("J123", idxDT), "=0,85*2");
-    // this.printCellData("J123", idxDT);
-    // this.printCellData("K123", idxDT);
-    // this.printCellData("C15", ST);
-    // this.printCellData("J126", idxDT);
-    // this.printCellData("K126", idxDT);
-
-    // this.printCellData("C17", ST);
-    // this.printCellData("C18", ST);
-    // this.printCellData("C19", ST);
-
-
-    // this.printCellData("C20", ST);
-    // this.printCellData("C21", ST);
-    // this.printCellData("C22", ST);
-
-
-    // this.printCellData("K11", idxDT);
-    // this.printCellData("J11", idxDT);
-    // this.printCellData("K30", ST);
   }
 
   printCellData(cell: string, sheet) {
-
     var cellcontent = this.hfInstance.getCellFormula(this.hfInstance.simpleCellAddressFromString(cell, sheet)); // H169 ='Statik Tetra'!C44
     console.log(cell, cellcontent);
     var result = this.hfInstance.getCellValue(this.hfInstance.simpleCellAddressFromString(cell, sheet));
@@ -237,27 +193,8 @@ export class XlsconvComponent implements OnInit {
     else {
       console.log(cell, result);
     }
-
-  }
-
-  tables2model(tables) {
-    const l = {
-      id: '',
-      name: '',
-      typ: '',
-      farbe: '',
-      points: { x: 0, y: 0, z: 0 },
-      bauuntergruppe: '',
-      booleanOperation: '',
-      baugruppe: '',
-      verknuepfteElemente: [''],
-      extrusionsvektor: { x: 0, y: 0, z: 0 },
-      material: ''
-    };
-
   }
 
   ngOnInit(): void {
   }
-
 }
